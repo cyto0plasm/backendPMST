@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{BBAE772F-BA8D-DA9F-163F-7B6B93F58FE3}</ProjectGuid>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>PMST</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <!-- Configuration for each build/platform -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <!-- Property sheets and user macros -->
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <!-- Compiler and linker settings for each configuration -->
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <!-- References -->
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector NET 9.3\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\study\VisualStudio\pmsMine\PMST\PMST\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <!-- Source files -->
+  <ItemGroup>
+    <ClCompile Include="Controllers\CategoryController.cpp" />
+    <ClCompile Include="Controllers\PharmaciesController.cpp" />
+    <ClCompile Include="Controllers\ProductsController.cpp" />
+    <ClCompile Include="Controllers\SalesController.cpp" />
+    <ClCompile Include="Controllers\StockHistoryController.cpp" />
+    <ClCompile Include="Controllers\SuppliersController.cpp" />
+    <ClCompile Include="Controllers\UsersController.cpp" />
+    <ClCompile Include="Database\DBConnection.cpp" />
+    <ClCompile Include="Forms\Dashboard.cpp" />
+    <ClCompile Include="Forms\Login.cpp" />
+    <ClCompile Include="Forms\main.cpp" />
+    <ClCompile Include="Forms\Register.cpp" />
+    <ClCompile Include="Models\CategoryModel.cpp" />
+    <ClCompile Include="Models\PharmacyModel.cpp" />
+    <ClCompile Include="Models\ProductModel.cpp" />
+    <ClCompile Include="Models\SaleModel.cpp" />
+    <ClCompile Include="Models\StockHistoryModel.cpp" />
+    <ClCompile Include="Models\SupplierModel.cpp" />
+    <ClCompile Include="Models\UserModel.cpp" />
+  </ItemGroup>
+  <!-- Include form header -->
+  <ItemGroup>
+    <ClInclude Include="Controllers\CategoryController.h" />
+    <ClInclude Include="Controllers\PharmaciesController.h" />
+    <ClInclude Include="Controllers\ProductsController.h" />
+    <ClInclude Include="Controllers\SalesController.h" />
+    <ClInclude Include="Controllers\StockHistoryController.h" />
+    <ClInclude Include="Controllers\SuppliersController.h" />
+    <ClInclude Include="Controllers\UsersController.h" />
+    <ClInclude Include="Database\DBConnection.h" />
+    <ClInclude Include="Forms\Dashboard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Forms\Login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Forms\Register.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Models\CategoryModel.h" />
+    <ClInclude Include="Models\PharmacyModel.h" />
+    <ClInclude Include="Models\ProductModel.h" />
+    <ClInclude Include="Models\SaleModel.h" />
+    <ClInclude Include="Models\StockHistoryModel.h" />
+    <ClInclude Include="Models\SupplierModel.h" />
+    <ClInclude Include="Models\UserModel.h" />
+  </ItemGroup>
+  <!-- Embed Dashboard resources with correct logical name -->
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Dashboard.resx">
+      <DependentUpon>Forms\Dashboard.h</DependentUpon>
+      <LogicalName>$(RootNamespace).Dashboard.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Forms\Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Register.resx">
+      <DependentUpon>Forms\Register.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <!-- Icon and image resources -->
+  <ItemGroup>
+    <Image Include="Images\cashier-icon.ico" />
+    <Image Include="Images\category-icon.ico" />
+    <Image Include="Images\close.ico" />
+    <Image Include="Images\close.png" />
+    <Image Include="Images\collaps.png" />
+    <Image Include="Images\home-icon.ico" />
+    <Image Include="Images\home.ico" />
+    <Image Include="Images\Logo .ico" />
+    <Image Include="Images\Logo-Icon.png" />
+    <Image Include="Images\logo-icon2.ico" />
+    <Image Include="Images\Logo-Icon3.ico" />
+    <Image Include="Images\logo-icon4.ico" />
+    <Image Include="Images\logo.ico" />
+    <Image Include="Images\max.png" />
+    <Image Include="Images\max1.png" />
+    <Image Include="Images\maximize.png" />
+    <Image Include="Images\maximize2.png" />
+    <Image Include="Images\min1.png" />
+    <Image Include="Images\mini.png" />
+    <Image Include="Images\minimize.png" />
+    <Image Include="Images\minimize1.png" />
+    <Image Include="Images\minimize2.png" />
+    <Image Include="Images\minimize3.png" />
+    <Image Include="Images\product-icon.ico" />
+    <Image Include="Images\scanner-icon.ico" />
+    <Image Include="Images\stock.ico" />
+    <Image Include="Images\supplier-icon.ico" />
+    <Image Include="Images\user.ico" />
+  </ItemGroup>
+  <!-- Build output artifacts (ignored in source control) -->
+  <ItemGroup>
+    <None Include="lib\SQLite.Interop.dll" />
+    <None Include="lib\System.Data.SQLite.dll" />
+    <None Include="lib\System.Data.SQLite.dll.config" />
+    <None Include="pharmacy_management_system.db" />
+    <None Include="x64\Debug\PMST.exe.recipe" />
+    <None Include="x64\Debug\PMST.Forms.Dashboard.resources" />
+    <None Include="x64\Debug\PMST.vcxproj.AssemblyReference.cache" />
+    <None Include="x64\Debug\PMST.vcxproj.GenerateResource.cache" />
+    <None Include="x64\Debug\vc143.pdb" />
+  </ItemGroup>
+  <!-- Object files -->
+  <ItemGroup>
+    <Object Include="x64\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.obj" />
+    <Object Include="x64\Debug\Dashboard.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="x64\Debug\PMST.Build.CppClean.log" />
+    <Text Include="x64\Debug\PMST.log" />
+    <Text Include="x64\Debug\PMST.vcxproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="lib\System.Data.SQLite.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

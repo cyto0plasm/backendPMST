@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Forms\Dashboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\DBConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\CategoryModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers\CategoryController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers\PharmaciesController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers\ProductsController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers\SalesController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers\StockHistoryController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers\SuppliersController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers\UsersController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\PharmacyModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\ProductModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\SaleModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\StockHistoryModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\SupplierModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\UserModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Forms\Login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\PMST.vcxproj.AssemblyReference.cache" />
+    <None Include="x64\Debug\PMST.exe.recipe" />
+    <None Include="x64\Debug\vc143.pdb" />
+    <None Include="x64\Debug\PMST.Forms.Dashboard.resources" />
+    <None Include="x64\Debug\PMST.vcxproj.GenerateResource.cache" />
+    <None Include="lib\SQLite.Interop.dll" />
+    <None Include="lib\System.Data.SQLite.dll" />
+    <None Include="lib\System.Data.SQLite.dll.config" />
+    <None Include="pharmacy_management_system.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Forms\Dashboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\DBConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\CategoryModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers\CategoryController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers\PharmaciesController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers\ProductsController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers\SalesController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers\StockHistoryController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers\SuppliersController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers\UsersController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\PharmacyModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\ProductModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\SaleModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\StockHistoryModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\SupplierModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\UserModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Register.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Forms\Login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="x64\Debug\PMST.log" />
+    <Text Include="x64\Debug\PMST.Build.CppClean.log" />
+    <Text Include="x64\Debug\PMST.vcxproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="x64\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.obj" />
+    <Object Include="x64\Debug\Dashboard.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Images\logo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\cashier-icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\category-icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\home-icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Logo .ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Logo-Icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\logo-icon2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Logo-Icon3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\logo-icon4.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\product-icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\scanner-icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\supplier-icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\home.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\max.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\mini.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\minimize.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\close.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\min1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\max1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\maximize.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\maximize2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\minimize1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\minimize2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\minimize3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\user.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\stock.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\collaps.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="lib\System.Data.SQLite.xml" />
+  </ItemGroup>
+</Project>
